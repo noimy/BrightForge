@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
     // OPTION B: Use Resend (recommended for Vercel — add RESEND_API_KEY env var)
     // Install: npm install resend
     // ─────────────────────────────────────────────────────────────
-    /*
+    
     const { Resend } = await import('resend')
     const resend = new Resend(process.env.RESEND_API_KEY)
 
