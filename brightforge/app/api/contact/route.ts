@@ -27,8 +27,16 @@ export async function POST(req: NextRequest) {
       from: 'BrightForge <onboarding@resend.dev>',
       to: process.env.CONTACT_EMAIL!,
       replyTo: email,
-      subject: `New Demo Request — ${business}`,
-      html: `
-        <h2>New Demo Request from BrightForge Website</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Business:</strong> ${business}</p
+      subject: `New Demo Request - ${business}`,
+      html: '<h2>New Demo Request</h2><p><strong>Name:</strong> ' + name + '</p><p><strong>Business:</strong> ' + business + '</p><p><strong>Email:</strong> ' + email + '</p><p><strong>Phone:</strong> ' + (phone || '-') + '</p><p><strong>Website:</strong> ' + (website || '-') + '</p><p><strong>Message:</strong> ' + (message || '-') + '</p>',
+    })
+
+    return NextResponse.json({ success: true })
+  } catch (err) {
+    console.error('Contact form error:', err)
+    return NextResponse.json(
+      { error: 'Server error. Please try again or email us directly.' },
+      { status: 500 }
+    )
+  }
+}
