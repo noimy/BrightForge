@@ -212,8 +212,8 @@ export default function ContactPage() {
 
             <div className="bg-white border border-forge-100 rounded-2xl p-6">
               <h3 className="font-semibold text-ink mb-2">Prefer email?</h3>
-              <a href="mailto:contact@brightforge.com" className="text-sm text-ember-500 hover:underline">
-                contact@brightforge.com
+              <a href="mailto:brightforgesites@gmail.com" className="text-sm text-ember-500 hover:underline">
+                brightforgesites@gmail.com
               </a>
             </div>
 
