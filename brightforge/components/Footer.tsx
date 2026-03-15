@@ -45,8 +45,8 @@ export default function Footer() {
             <h4 className="text-cream text-sm font-semibold mb-4 uppercase tracking-wider">Contact</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="mailto:contact@brightforge.com" className="hover:text-ember-400 transition-colors">
-                  contact@brightforge.com
+                <a href="mailto:brightforgesites@gmail.com" className="hover:text-ember-400 transition-colors">
+                  brightforgesites@gmail.com
                 </a>
               </li>
               <li>
